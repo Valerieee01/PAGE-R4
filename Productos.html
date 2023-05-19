@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Poductos</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="../img/producto.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <style>
+    * {
+      padding: 0%;
+      margin: 0%;
+      box-sizing: border-box;
+    }
+
+    .title {
+      font-size: 15px;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .menu li a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding-left: 30px;
+      display: block;
+      margin-right: 1em;
+    }
+
+    #menu1 {
+      background-color: white;
+      border: none;
+      color: black;
+      margin-top: 1em;
+      align-items: right;
+    }
+
+    #menu1:hover {
+      border-bottom: 2px solid #4e076d;
+    }
+
+    .menu-2 {
+      margin-top: 0.2em
+    }
+
+    .col-12-2 {
+      background-color: rgb(33, 129, 30);
+      height: 25px;
+    }
+
+    .col-12-3 {
+      background-color: #4e076d;
+      color: #4e076d;
+      height: 20px;
+    }
+
+    #tres {
+      background-color: #4e076d;
+      height: 300px;
+    }
+
+    .logo-footer {
+      margin-left: 5em;
+    }
+
+    .contacto {
+      width: 150px;
+      background-color: #a882bb;
+      border-radius: 20px;
+      margin-left: 8em;
+      border: none;
+      padding: 9px;
+      color: white;
+      font-weight: 800;
+    }
+
+    .contacto:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-final ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .menu-final li a {
+      color: white;
+      font-size: xx-large;
+    }
+
+    .historia {
+      color: white;
+      margin-top: 2em;
+    }
+
+    #escrito-final {
+      width: 80%;
+      color: white;
+    }
+
+    #footer-2 {
+      background-color: rgb(33, 129, 30);
+      justify-content: flex-end;
+    }
+
+    #pie-final {
+      margin-top: 10px;
+      color: white;
+    }
+
+    #desarrolladores {
+      color: white;
+      margin-top: 0.5em;
+    }
+
+    .creators {
+      color: white;
+    }
+
+    /*HEADER PRODUCTOS*/
+    .header-productos {
+      height: 400px;
+      background: #405ea5;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #3e308b96, #0b074281), url(https://www.maquinariacarran.cl/wp-content/uploads/2020/12/TIPS-DE-MAQUINARIAS-RECOMENDACIONES-MIXER-2_INTERIOR-BLOG-1300x785px.jpg);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #3e308b96, #0b074281), url(https://www.maquinariacarran.cl/wp-content/uploads/2020/12/TIPS-DE-MAQUINARIAS-RECOMENDACIONES-MIXER-2_INTERIOR-BLOG-1300x785px.jpg);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background-attachment: fixed;
+      position: relative;
+      background-position: center;
+      background-size: cover;
+
+
+    }
+
+    .titulo {
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      font-size: 50px;
+      padding-top: 200px;
+      padding-left: 30px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .inicio {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding-left: 60px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+    }
+
+    .wave {
+      position: absolute;
+      width: 100%;
+      bottom: 0%;
+      object-fit: cover;
+    }
+
+    /*contenerdor informacion*/
+    .container {
+      width: 85%;
+    }
+
+    .info {
+      margin-top: 30px;
+      box-shadow: 0px 5px 10px rgba(62, 31, 236, 0.7);
+      padding: 15px;
+    }
+
+    h2 {
+      padding-left: 10px;
+      font-size: 40px;
+      transition: 2s;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      border-bottom: solid 3px rgb(34, 0, 128);
+      padding-bottom: 5px;
+    }
+
+    h2:hover {
+      font-size: 45px;
+
+    }
+
+    .subtitulo {
+      margin-top: 15px;
+    }
+
+    .descripcion {
+      padding-top: 10px;
+      padding-left: 10px;
+      text-align: justify;
+      font-weight: 200;
+    }
+
+    .boton-contact {
+      padding: 10px;
+      margin-left: 10px;
+      background-color: #a5a3a3;
+      color: rgb(48, 25, 182);
+      width: 40%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    @media(max-width: 998px) {
+      #tres{
+          height: 600px;
+        }
+  
+        .menu-final ul {
+        margin-left: 10em;
+       }
+      
+         #margen-final{
+        margin-left: 2em;
+      }
+  
+  }
+
+  </style>
+
+</head>
+
+<body>
+  <!-- INICIO -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12-2">
+        <nav class="menu">
+          <nav class="menu">
+            <ul>
+                <li><a
+                    href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/INicio%20del%20proyecto_1.html"><strong>INICIO</strong>
+                  </a></li>
+                <li><a href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto">
+                    <strong>CONTACTANOS</strong></a></li>
+            </ul>
+          </nav>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <a href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/INicio%20del%20proyecto_1.html"><img src="https://i.ibb.co/NVvWh16/LOGO-F-L.jpg" alt="LOGO-F-L"
+            width="300px"></a>
+      </div>
+      <div class="col-lg-2 col-sm-4">
+        <div class="dropdown">
+          <a id="menu1" class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <strong>QUÉ HACEMOS</strong>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item"
+                href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/Productos.html">Productos</a></li>
+        <li><a class="dropdown-item"
+                href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/Servicios.html">Servicios</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-4">
+        <div class="dropdown">
+          <a id="menu1" class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <strong>NOSOTROS</strong>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/PROPOSITO_PROYECTO.HTML">Propósito</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/Conocenos.html">Conócenos</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-4">
+        <div class="dropdown">
+          <a id="menu1" class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <strong>CLIENTES</strong>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/Clientes.html">Made</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/Clientes.html">Prevesa</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-12-3">
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+  <div class="row header-productos">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h1 class="titulo">Productos</h1>
+      <a href="" class="inicio">Produtos de venta</a>
+      <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+          style="height: 100%; width: 100%;">
+          <path d="M0.00,49.98 C149.99,150.00 298.24,28.13 503.10,65.63 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: rgb(255, 255, 255);"></path>
+        </svg></div>
+    </div>
+  </div>
+
+  <!-- contenido -->
+  <div class="container">
+    <div class="row info">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <h2>Trompo o tambor</h2>
+        <p class="descripcion">En venta es uno de los equipos más importantes en proyectos de ingeniería de
+          construcción. Los camiones de concreto a la venta con trabajo llevan a cabo la tarea de transportar de una
+          planta de dosificación de concreto al sitio de construcción de manera eficiente y segura. Larga vida útil.
+          Utilizamos acero de calidad de Wuhan Hierro Y Acero Corporación. Se utilizan diferentes diseños de grosor
+          para diferentes posiciones. Además, agregamos las tiras de desgaste de las cuchillas de mezcla, lo que hace
+          que la vida útil del tanque sea 1.5 veces la de los fabricantes generales. Para mas información contáctanos.
+        </p>
+        <a class="btn boton-contact" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto" role="button">Más información</a>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://aimixgrupo.com/wp-content/uploads/2019/03/Cami%C3%B3n-Mixer-Hormigonero-De-Cemento.jpg"
+                class="d-block w-100 img-carousel" alt="tambor">
+            </div>
+            <div class="carousel-item">
+              <img src="https://aimixgrupo.com/wp-content/uploads/2019/11/Cami%C3%B3n-Mixer-Para-Concreto.jpg"
+                class="d-block w-100 img-carousel" alt="tambor">
+            </div>
+            <div class="carousel-item">
+              <img src="https://aimixgrupo.com/wp-content/uploads/2021/01/Camion-Mixer-De-Cemento-Mezclador.jpg"
+                class="d-block w-100 img-carousel" alt="tambor">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row info">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://autoline.com.co/img/photos/2207/13/12/281123194800/1655720063391122121_common.jpg"
+                class="d-block w-100" alt="chasis">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://autoline.es/img/s/camion-camion-chasis-ASTRA-IVECO-HD9-4x4---1655816061203524900_big--22062115413092675900.jpg"
+                class="d-block w-100" alt="chasis">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.truck1.ae/img/Tractor_unit_Iveco_Astra_HD9_64_54_6X4_NEW_unused-xxl-607/607_8976933791573.jpg"
+                class="d-block w-100" alt="chasis">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <h2>Chasis</h2>
+        <p class="descripcion">Para la mayor seguridad de los operadores, las hormigoneras son equipadas con escalera de
+          acceso fácil con guarda cuerpo, plataforma espaciosa y protección para la visualización de la carga, diseñada
+          de manera de atender las exigencias de seguridad.
+          Construido en chapas de acero de alta resistencia de la misma calidad y espesor del tambor. Dimensionado para
+          una rápida carga y descarga. Posee un sistema de traba tipo “morsa” para posicionamiento en cualquier ángulo
+          de giro de la canaleta de descarga. Traba de seguridad para posicionamiento estratégico, rápido y seguro
+          durante el transporte. Sistema de levantamiento de la canaleta de descarga por medio de robusto y eficiente
+          tornillo mecánico de accionamiento manual. Canaletas de fondo plano comprobadamente poseen vida más útil..
+          Para más información contáctanos. </p>
+        <a class="btn boton-contact" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto" role="button">Más información</a>
+      </div>
+    </div>
+    <div class="row info">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <h2>Neumáticos</h2>
+        <p class="descripcion">Está diseñado para terrenos complicados y tareas de alta exigencia de vehículos, deben
+          soportar fuertes fuerzas laterales y de frenado, además de cargas variables. Están diseñados para rendir mejor
+          en posiciones de rodaje libre sobre el eje del remolque. Los flancos reforzados ayudan a proteger la carcasa
+          de los daños causados por los bordillos. Con un diseño agresivo de la banda de rodamiento y un compuesto
+          optimizado que contribuye a
+          prolongar su vida útil original, el neumático L315 de base ancha te mantendrá en suelo firme tanto dentro como
+          fuera de la carretera. Para más información contáctanos. </p>
+        <a class="btn boton-contact" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto" role="button">Más información</a>
+      </div>
+      <div class="col ">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="https://llantauto.net/wp-content/uploads/2021/09/llanta.jpg" class="d-block w-100" alt="neumáticos">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="https://static4.depositphotos.com/1005742/388/i/600/depositphotos_3880882-stock-photo-truck-tyre.jpg"
+                class="d-block w-100" alt="neumáticos">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://noticiaslogisticaytransporte.com/wp-content/uploads/2016/05/Goodyear_KMAX-neumaticos.jpg"
+                class="d-block w-100" alt="neumátcios">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row info">
+      <div class="col-lg-6 col-md-6 col-sm-6 pt-3">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://sacine.com/wp-content/uploads/2021/11/Cabinas-Acusticas-15.jpg"
+                class="d-block w-100 h-70" alt="cabina">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.ajpower.net/images/uploads/Acoustic-Enclosures_Large_2.png"
+                class="d-block w-100 h-70" alt="cabina">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <h2>Cabinas insonoras</h2>
+        <p class="descripcion">Nuestras cabinas insonorizadas cuentan con las mejores características, pueden contener
+          todo el grupo electrógeno en el interior de ellas con el propósito de disminuir, atenuar, aislar y combatir en
+          gran manera la contaminación sonora del sitio en donde se emplean, nuestras cabinas insonorizadas están
+          diseñadas para proporcionar un lugar exclusivo y seguro para el generador eléctrico que lo protegen tanto de
+          la intemperie como de todo riesgo exterior, además de evitar el riesgo para los trabajadores que están
+          próximos a estos equipos; las cabinas están adaptadas a nuestras plantas eléctricas, que en su funcionamiento,
+          producen una gran cantidad de ruido por su acción mecánica. Contáctanos para más información.</p>
+        <a class="btn boton-contact" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto" role="button">Más información</a>
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <footer>
+    <div class="container-fluid" id="tres">
+      <div class="row">
+        <div class="col-6">
+          <img class="logo-footer" src="https://i.ibb.co/sQDFtSJ/F-L-3.png" alt="F-L-3" width="300px"
+            margin-left="10em">
+          <div class="row">
+            <a href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto"><input class="contacto" type="button" value="CONTACTANOS"></a> 
+          </div>
+          <div class="row">
+            <div class="col-6" id="redes-sociales">
+              <nav class="menu-final">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100090683397029&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                      </li>
+                      <li> <a href="https://twitter.com/FLMANTENIMIENT1?t=N6FZuPwFBNHiH4gmCdyM6g&s=09"><i class="bi bi-twitter"></i></a></li>
+                      <li><a href="https://instagram.com/fl_mantenimientos_s.a.s?igshid=ZDdkNTZiNTM="><i class="bi bi-instagram"></i></a></li>
+                      <li><a href="https://www.tiktok.com/@zharmzcemfx?_t=8aanx7JLZu1&_r=1"><i class="bi bi-tiktok"></i></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12" id="margen-final">
+          <h4 class="historia">CONTRUYENDO UNA EMPRESA HONESTA</h4>
+          <br>
+          <div id="escrito-final">
+            <p align="justify">F&L MANTENIMIENTOS S.A.S nace de un proyecto de dos emprendendores que por muchos años
+              desearon crear una
+              empresa para satisfacer las necesidades de clientes que buscan economía, calidad y honestidad. El inicio
+              de
+              un proyecto con un gran potencial y alta eficacia</p>
+          </div>
+
+        </div>
+      </div>
+      <div id="footer-2" class="row">
+        <div class="col-5">
+          <p id="pie-final"><strong>© F&L MANTENIMIENTOS S.A.S</strong></p>
+        </div>
+        <div class="col-4">
+          <p id="desarrolladores"><strong>Desarrollado por:</strong> <a class="creators" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/thecreators.html">{TheCreators}</a> </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

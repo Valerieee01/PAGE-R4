@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Servicios</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../img/servicio-postal.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-size: 15px;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .menu li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding-left: 30px;
+            display: block;
+            margin-right: 1em;
+        }
+
+        #menu1 {
+            background-color: white;
+            border: none;
+            color: black;
+            margin-top: 1em;
+            align-items: right;
+        }
+
+        #menu1:hover {
+            border-bottom: 2px solid #4e076d;
+        }
+
+        .menu-2 {
+            margin-top: 0.2em
+        }
+
+        .col-12-2 {
+            background-color: rgb(33, 129, 30);
+            height: 25px;
+        }
+
+        .col-12-3 {
+            background-color: #4e076d;
+            color: #4e076d;
+            height: 20px;
+        }
+
+        #tres {
+            background-color: #4e076d;
+            height: 300px;
+        }
+
+        .logo-footer {
+            margin-left: 5em;
+        }
+
+        .contacto {
+            width: 150px;
+            background-color: #a882bb;
+            border-radius: 20px;
+            margin-left: 8em;
+            border: none;
+            padding: 9px;
+            color: white;
+            font-weight: 800;
+        }
+
+        .contacto:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-final ul {
+            margin-left: 40px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .menu-final li a {
+            color: white;
+            font-size: xx-large;
+        }
+
+        .historia {
+            color: white;
+            margin-top: 2em;
+        }
+
+        #escrito-final {
+            width: 80%;
+            color: white;
+        }
+
+        #footer-2 {
+            background-color: rgb(33, 129, 30);
+            justify-content: flex-end;
+        }
+
+        #pie-final {
+            margin-top: 10px;
+            color: white;
+        }
+
+        #desarrolladores {
+            color: white;
+            margin-top: 0.5em;
+        }
+
+        .creators {
+            color: white;
+        }
+
+        /*inicio estilos servicios*/
+        .container-servicios {
+            background-image: url(https://cdnebasnet.com/data/cache/opt_jpg/eshop/cervisimag/images/posts/218-1603764950-1400x1400.jpeg);
+            opacity: 0.8;
+            background-attachment: fixed;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            
+        }
+
+        .header-servicios {
+            background-color: #4e076d;
+            padding: 0%;
+            height: 70px;
+        }
+        .servicio1{
+            width: 90%;
+            padding-top: 40px;
+            padding-bottom: 20px;
+          
+        }
+
+        .titulo-servicios {
+            font-size: 45px;
+            padding-left: 110px;
+            padding-top: 5px;
+            color: rgb(255, 255, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-bottom: 0px;
+        }
+        
+
+        .carta {
+            background-color: rgb(240, 240, 240);
+            box-shadow: 0px 0px 15px 10px rgba(26, 26, 27, 0.7);
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            transition: 2s;
+        }
+        .carta:hover{
+            box-shadow: 15px 15px 20px rgba(0,0 ,0 , 0.7);
+            transform: scale(1.05)
+        }
+        .parrafo{
+            text-align: justify;
+            font-weight: 400;
+            padding: 10px
+        }
+        h3{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-bottom: solid 3px #20167a;
+            padding: 20px;
+        }
+        .boton-contact {
+            padding: 10px;
+            margin-left: 10px;
+            background-color: #20167a;
+            color: white;
+            width: 50%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .img-servicios {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        @media(max-width: 998px) {
+            #tres{
+                height: 625px;
+              }
+        
+              .menu-final ul {
+              margin-left: 10em;
+             }
+            
+               #margen-final{
+              margin-left: 2em;
+            }
+        
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- INICIO -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12-2">
+                <nav class="menu">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/INicio%20del%20proyecto_1.html"><strong>INICIO</strong>
+                                </a></li>
+                            <li><a href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto"> <strong>CONTÁCTANOS</strong></a></li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <a href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/INicio%20del%20proyecto_1.html"><img
+                    src="https://i.ibb.co/NVvWh16/LOGO-F-L.jpg" width="300px"></a>
+            </div>
+            <div class="col-lg-2 col-sm-4">
+                <div class="dropdown">
+                    <a id="menu1" class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>QUÉ HACEMOS</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/Productos.html">Productos</a>
+                        </li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/Servicios.html">Servicios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4">
+                <div class="dropdown">
+                    <a id="menu1" class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>NOSOTROS</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"
+                            href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/PROPOSITO_PROYECTO.HTML">Propósito</a>
+                    </li>
+                    <li><a class="dropdown-item"
+                            href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/Conocenos.html">Conócenos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4">
+                <div class="dropdown">
+                    <a id="menu1" class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>CLIENTES</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/Clientes.html">Made</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/Clientes.html">Prevesa</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12-3">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Inicio de contenido servicios -->
+    <div class="container-fluid container-servicios">
+        <div class="row header-servicios">
+            <div class="col p-0">
+                <h1 class="titulo-servicios">Servicios</h1>
+                <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                        style="height: 100%; width: 100%;">
+                        <path d="M-5.36,7.42 C136.84,72.55 338.88,-42.91 502.54,23.20 L500.00,0.00 L-2.54,-6.39 Z"
+                            style="stroke: none; fill: #4e076d"></path>
+                    </svg></div>
+
+            </div>
+        </div>
+        <div class="container-fluid servicio1">
+            <div class="row ">
+                <div class="col carta">
+                    <img class="img-servicios"
+                        src="https://aimixgrupo.com.mx/wp-content/uploads/2020/06/10m%C2%B3cami%C3%B3n-mixer-para-hormig%C3%B3n.jpg"
+                        alt="reconstrucción de tambores">
+                    <h3>Reconstrucción de tambores</h3>
+                    <p class="parrafo" >Cada tratamiento empieza con el desmontaje de la máquina. Tanto las piezas grandes y pesadas,
+                        como las más pequeñas, estén o no equipadas con electrónica o hidráulica, se desmontan por
+                        separado. El proceso de desmontaje es muy importante, porque el óxido y la oxidación se inician
+                        en lugares en los que la conservación no es buena. Durante el proceso de desmontaje también
+                        comprobamos con atención la presencia del óxido y la oxidación. Son precisamente estas áreas las
+                        que reciben atención adicional en el plan de tratamiento.</p>
+                    <a class="btn btn-secondary boton-contact" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto" role="button">Más información</a>
+                </div>
+                <div class="col carta">
+                    <img class="img-servicios"
+                        src="https://us.123rf.com/450wm/bialasiewicz/bialasiewicz1511/bialasiewicz151100506/47640578-cierre-de-imagen-de-motor-del-coche-levantado.jpg?ver=6"
+                        alt="arreglo de motores">
+                    <h3>Arreglo de motores</h3>
+                    <p class="parrafo">¿Su objeto tiene daños? ¿O presenta un fallo técnico? No se preocupe, nuestros mecánicos lo
+                        repararán. Controlamos detalladamente su vehículo o motor, evaluando los daños y el desgaste de
+                        los elementos que intervienen en el correcto funcionamiento del mismo; ofreciéndoles así un
+                        diagnóstico completo y un presupuesto detallado de los trabajos a realizar.Y cuando se trate de
+                        un fallo importante, nos pondremos en contacto con el fabricante.
+                    </p>
+                    <a class="btn btn-secondary boton-contact" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto" role="button">Más información</a>
+                </div>
+                <div class="col carta">
+                    <img class="img-servicios" src=" https://i.ytimg.com/vi/s9LKH54JOcw/maxresdefault.jpg" alt="pintura de estructura">
+                    <h3>Pintura de la estructura</h3>
+                    <p class="parrafo">Compete a la pintura de toda su estructura, incluyendo pintura de la defensa, tambor, carrosería,
+                        chasis, motor. La capa de pintura vieja se elimina mediante el uso de lijadoras, mientras que las partes que no se van a tratar se cubren con cinta adhesiva, papel o
+                        con una lámina de plástico. Utilizando la protección anticaídas y los EPI pertinentes, creamos
+                        un ambiente de trabajo seguro. Pintura, la parte más importante de la conservación de sus equipos es la
+                        aplicación de los diversos sistemas de pintura y barnizado.
+                    </p>
+                    <a class="btn btn-secondary boton-contact" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto" role="button">Más información</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col carta">
+                    <img class="img-servicios" src="https://st2.depositphotos.com/1518767/6556/i/450/depositphotos_65566081-stock-photo-team-of-mechanics-talking-together.jpg" alt="asesoria">
+                    <h3>Asesoría</h3>
+                    <p class="parrafo">Nuestra empresa FYL-Mantenimientos, cuenta con personal calificado y debidamente entrenado, con el respaldo de las fábricas, para la
+                        reparación de los equipos, mantenimiento y asistencia técnica, así como también en lo que
+                        respecta a la capacitación en el uso y operación de los mismos. Brindamos la asesoría necesaria
+                        para realizar la inversión correcta ya séa de partes especificas o de vehiculo entero, de acuerdo al requerimiento de cada proyecto en particular.
+                    </p>
+                    <a class="btn btn-secondary boton-contact" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto" role="button">Más información</a>
+                </div>
+                <div class="col carta">
+                    <img class="img-servicios" src="https://aimixgrupo.com/wp-content/uploads/2020/05/AIMIX-Planta-de-Hormig%C3%B3n.jpg" alt="planta de producción de concreto">
+                    <h3>Plantas de producción de concreto</h3>
+                    <p class="parrafo">Es necesario tomar medidas para el mantenimiento preventivo de la planta y mantenerla limpia. Preservar su planta dosificadora de concreto en buenas condiciones no sólo extenderá su vida survice , sino también aumentar la eficiencia de su planta dosificadora de concreto. Con nuestro equipo bien calificado podrá prolongar su vida y potenciar su uso. </p>
+                    <a class="btn btn-secondary boton-contact" href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/contactenos.html#contacto" role="button">Más información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- INICIO DE FOOTER -->
+    <footer>
+        <div class="container-fluid" id="tres">
+            <div class="row">
+                <div class="col-6">
+                    <img class="logo-footer" src="https://i.ibb.co/sQDFtSJ/F-L-3.png" alt="F-L-3" width="300px"
+                        margin-left="10em">
+                    <div class="row">
+                        <input class="contacto" type="button" value="CONTACTANOS">
+                    </div>
+                    <div class="row">
+                        <div class="col-6" id="redes-sociales">
+                            <nav class="menu-final">
+                                <ul>
+                                    <li style="padding: 8px;" ><a href="https://www.facebook.com/profile.php?id=100090683397029&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a></li>
+                                    <li style="padding: 8px;" ><a href="https://twitter.com/FLMANTENIMIENT1?t=N6FZuPwFBNHiH4gmCdyM6g&s=09"><i class="bi bi-twitter"></i></a></li>
+                                    <li style="padding: 8px;" ><a href="https://instagram.com/fl_mantenimientos_s.a.s?igshid=ZDdkNTZiNTM="><i class="bi bi-instagram"></i></a></li>
+                                    <li style="padding: 8px;" ><a href="https://www.tiktok.com/@zharmzcemfx?_t=8aanx7JLZu1&_r=1"><i class="bi bi-tiktok"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12" id="margen-final">
+                    <h4 class="historia">CONTRUYENDO UNA EMPRESA HONESTA</h4>
+                    <br>
+                    <div id="escrito-final">
+                        <p align="justify">F&L MANTENIMIENTOS S.A.S nace de un proyecto de dos emprendendores que por
+                            muchos años desearon crear una
+                            empresa para satisfacer las necesidades de clientes que buscan economía, calidad y
+                            honestidad. El inicio de
+                            un proyecto con un gran potencial y alta eficacia</p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="footer-2" class="row">
+                <div class="col-5">
+                    <p id="pie-final"><strong>© F&L MANTENIMIENTOS S.A.S</strong></p>
+                </div>
+                <div class="col-4">
+                    <p id="desarrolladores"><strong>Desarrollado por:</strong> <a class="creators"
+                        href="http://127.0.0.1:5500/instalaci%C3%B3n-cdn/thecreators.html">{TheCreators}</a> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
